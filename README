@@ -1,0 +1,2 @@
+Make sure you can do cgi with apache.
+Change $prefix in local.pl to wherever your music is.
