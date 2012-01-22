@@ -1,0 +1,22 @@
+/* div { border: 1px solid black; margin: 4px } */
+div#songcont { float: left; padding: 4px }
+div#filecont { float: right; padding: 4px; text-align: right }
+/*div.even { background-color: #aaaaaa }*/
+/*div.odd { background-color: #eeeeee }*/
+/*div.total { background-color: #ffffff }*/
+
+table.tracklist { border: 4px outset #8B8378 }
+table.tracklist th { text-align: left }
+tr.trackhead { background-color: #e0e0ff }
+tr { border: 2px solid }
+tr.playing td { background-color: #aaccaa }
+tr.odd td { background-color: #aaaacc }
+tr.even td { background-color: #ccccff }
+tr.total td { background-color: #ffffff }
+td.time { text-align: right }
+td.rm { text-align: right }
+td.tracknum { text-align: right }
+
+table.files { border: 4px inset #8B8378; float: right }
+tr.filehead { background-color: #e0e0ff }
+
