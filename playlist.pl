@@ -3,7 +3,7 @@
 @xmms = `COLUMNS=200 nyxmms2 list`;
 @music = ();
 
-@state = `xmms2 status`;
+@state = `nyxmms2 current -r 0`;
 
 if ( @state[0] =~ /(.*):.*/ ) {
 	$status = $1;

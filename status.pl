@@ -1,6 +1,6 @@
 #!/usr/bin/perl
 
-@state = `xmms2 status`;
+@state = `nyxmms2 current -r 0`;
 
 if ( @state[0] =~ /(.*):.*/ ) {
     $status = $1;

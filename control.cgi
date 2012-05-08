@@ -10,12 +10,12 @@ $musicpath = $query{'path'};
 $command = $query{'cmd'};
 
 if( $command =~ /play|pause|stop|next|prev|toggle|(jump \d+)|(remove \d+)/ ) {
-    `xmms2 $command`;
+    `nyxmms2 $command`;
 }
 
 if ( $command =~ /add (.*)/ ) {
     $mp3 = unlocalize($1);
-    `xmms2 add "$mp3"`;
+    `nyxmms2 add "$mp3"`;
 }
 
 $musicpath =~ s/&/%26/;
