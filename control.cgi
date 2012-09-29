@@ -20,14 +20,13 @@ if ( $command =~ /add (.*)/ ) {
 
 $musicpath =~ s/&/%26/;
 
-print <<"EOF";
+print <<"EOF"
 
 <html>
 <head>
-<meta http-equiv="REFRESH" content="0;url=music.cgi?path=$musicpath"
+<meta http-equiv="REFRESH" content="0;url=music.cgi?path=$musicpath">
 </head>
 </html>
 
 EOF
-
 
