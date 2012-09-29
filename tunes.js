@@ -52,6 +52,13 @@ function addSong (path, file) {
           });
 }
 
+function addAll (path) {
+    $.get('control.cgi?path=' + path + '&cmd=addAll',
+          function (data) {
+              updatePlaylist();
+          });
+}
+
 function jumpSong (track) {
     $.get('control.cgi?cmd=jump ' + track,
           function (data) {

@@ -83,4 +83,5 @@ foreach $file (@mp3s) {
     print "</tr>\n";
     $count++;
 }
+print "<tr><td></td><td><a onclick=\"addAll('$newpath')\" href=\"#\">Add all</a></td></tr>\n";
 print "</table>\n";

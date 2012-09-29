@@ -18,6 +18,15 @@ if ( $command =~ /add (.*)/ ) {
     `nyxmms2 add "$mp3"`;
 }
 
+if ( $command =~ /addAll/ ) {
+    my $dir = unlocalize($musicpath);
+    chdir "$dir";
+    my @files = glob "*.mp3";
+    for (@files) {
+        `nyxmms2 add \"$_\"\n`;
+    }
+}
+
 $musicpath =~ s/&/%26/;
 
 print <<"EOF"
