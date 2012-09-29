@@ -58,6 +58,7 @@ if ( $path ) {
 foreach $file (@folders) {
     $safefile = $file;
     $safefile =~ s/&/%26/;
+    $safefile =~ s/'/\\'/;
     print "<tr class=\"";
     print (($count % 2 == 0) ? "even" : "odd");
     print "\">\n";
@@ -73,6 +74,7 @@ foreach $file (@folders) {
 foreach $file (@mp3s) {
     $safefile = $file;
     $safefile =~ s/&/%26/; # and per se and
+    $safefile =~ s/'/\\'/;
     print "<tr class=\"";
     print (($count % 2 == 0) ? "even" : "odd");
     print "\">\n";
