@@ -9,7 +9,7 @@ print "Content-type: text/html\n\n";
 $musicpath = $query{'path'};
 $command = $query{'cmd'};
 
-if( $command =~ /play|pause|stop|next|prev|toggle|(jump \d+)|(remove \d+)/ ) {
+if( $command =~ /play|pause|stop|next|prev|toggle|(jump \d+)|(remove \d+)|clear/ ) {
     `nyxmms2 $command`;
 }
 

@@ -13,6 +13,9 @@ if ( @state[0] =~ /.*(\d+):(\d\d) of (\d+):(\d\d)/ ) {
 }
 
 print '<div id="controls">';
+
+print "<p><a href=\"#\" onclick=\"control('clear')\">Clear</a></p>\n";
+
 print "<p>\n";
 
 print "<a href=\"#\" onclick=\"control('prev')\">&lt;</a>\n";
