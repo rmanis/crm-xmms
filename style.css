@@ -1,6 +1,6 @@
 /* div { border: 1px solid black; margin: 4px } */
-div#songcont { float: left; padding: 4px }
-div#filecont { float: right; padding: 4px; text-align: right }
+div#songcont { float: left; padding: 4px; max-width: 45% }
+div#filecont { float: right; padding: 4px; text-align: right; max-width: 45% }
 /*div.even { background-color: #aaaaaa }*/
 /*div.odd { background-color: #eeeeee }*/
 /*div.total { background-color: #ffffff }*/
